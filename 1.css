@@ -1,0 +1,280 @@
+/* Your CSS Styles Go Here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+	overflow-x: hidden;
+	height: 200vh;
+	display: flex;
+	flex-direction: column;
+	gap:0;
+}
+
+h1{
+    color: #fff;
+	font-size: 4rem;
+}
+.mstr-container{
+	height: 63vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.btn-container{
+	display: flex;
+	width: 63vh;
+	flex-wrap: wrap;
+	gap: 0;
+	justify-content: center;
+	align-items:center;
+}
+
+.btnchild{
+	height: 20vh;
+	background-color: transparent;
+	cursor: pointer;
+	width: 20vh;
+	border-radius: 0;
+	border: none;
+	color: red;
+	font-size: 5rem;
+}
+.btnchild:hover{
+	background-color: white;
+}
+.btnchild:disabled{
+	background-color: transparent;
+	cursor: not-allowed;
+	color: red;
+}
+.spl-btn{
+	border: 3px solid blue;
+	color: white;
+	background-color: blue;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+#msg{
+	display: inline-flex;
+	padding: 3px;
+	border-radius: 3px;
+	background-color: #000000;
+	color: white;
+	
+}
+
+.line{
+	background-image: linear-gradient(90deg, red, purple, blue);
+	width: 36%;
+	height: 3px;
+	border: 2px solid white;
+	border-radius: 2px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 32%;
+	margin-right: 32%;
+	visibility: hidden;
+}
+
+#ln0{
+	top: 145vh;
+}
+#ln1{
+	top: 166vh;
+}
+#ln2{
+	top: 186vh;
+}
+#ln3, #ln4, #ln5{
+	transform: rotate(90deg);
+	width: 25%;
+	
+	top: 165vh;
+}
+#ln3{
+	margin-left: 28.5%;
+	margin-right: 46.5%;
+}
+#ln4{
+	margin-left: 37.5%;
+	margin-right: 37.5%;
+}
+#ln5{
+	margin-right: 28.5%;
+	margin-left: 46.5%;
+}
+#ln6{
+	transform: rotate(45deg);
+	top: 165vh;
+}
+#ln7{
+	transform: rotate(-45deg);
+	top: 165vh;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	/* Adjust the max-width as needed for your specific design */
+    .mstr-container{
+	height: 33vh;
+}
+.btn-container{
+	width: 33vh;
+}
+.btnchild{
+	height: 10vh;
+	width: 10vh;
+	border-radius: 0;
+	font-size: 3rem;
+}
+.line{
+	top: 130vh;
+	width: 64%;
+	height: 2px;
+	border: 1px solid white;
+	border-radius: 1px;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+
+#ln0{
+	top: 130.5vh;
+}
+#ln1{
+	top: 140.5vh;
+}
+#ln2{
+	top: 150.5vh;
+}
+#ln3, #ln4, #ln5{
+	transform: rotate(90deg);
+	width: 55%;
+	top: 140.5vh;
+}
+#ln3{
+	margin-left: 2.5%;
+	margin-right: 34.5%;
+}
+#ln4{
+	margin-left: 22.5%;
+	margin-right: 22.5%;
+}
+#ln5{
+	margin-right: 30.5%;
+	margin-left: 44.5%;
+}
+#ln6{
+	transform: rotate(45deg);
+	top: 140.5vh;
+}
+#ln7{
+	transform: rotate(-45deg);
+	top: 140.5vh;
+	
+}
+
+
+}
+
+.first-view{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin:0;
+	padding:0;
+	background: url('vecteezy_minimalist-dark-gradient-wave-background-simple-design-for_7718309-1.jpg') center/cover no-repeat; 
+}
+
+.scnd-view{
+	height: 100vh;
+	width: 100vw;
+	margin:0;
+	padding:0;
+	background: url('vecteezy_abstract-gradient-pastel-blue-and-purple-background-neon_8617161-1.jpg') center/cover no-repeat; ;
+	
+	
+}
+span{
+	margin:0;
+	padding:0;
+}
+/* WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect for smooth visibility changes */
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-60deg, pink, white, blue, white, blue, white, pink);
+    border-radius: 6px; /* Set the border radius of the scrollbar thumb */
+	opacity: 1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	opacity: 1;
+}
+
+#btn4{
+	 border: 0.5rem solid #3498db; /* Set your border color */
+	 padding:0;
+	 border-bottom: none;
+    box-shadow: 0, 0, 0, 0 0 0.5rem #3498db; /* Set your shadow color and size */
+	 animation: glow 1s infinite alternate;
+    transition: box-shadow 0.3s ease-in-out; /* Add a transition effect for smooth changes */
+}
+
+#btn3, #btn5, #btn6, #btn8{
+		
+	border-bottom: none;
+	border-left: none;
+	border-right: none;	
+	border-top: 0.5rem solid #3498db;
+	
+	
+}
+#btn1,#btn7{
+	border-left: 0.5rem solid #3498db;	
+	border-right: 0.5rem solid #3498db;
+	border-top: none;
+	border-bottom: none;
+}
+#btn7{
+	border-top: 0.5rem solid #3498db;
+		
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 0.5rem #3498db; /* Initial shadow */
+    }
+    to {
+        box-shadow: 0 0 1rem #3498db; /* Larger shadow for the glow effect */
+    }
+}
+
+#new-btn{
+	background-color: #fff;
+	color: black;
+	font-size: 2rem;
+	padding: 3px;
+	margin: 6px;
+	border-radius: 4px;
+}
+
+#new-btn:hover{
+	background-color: grey;
+	color: black;
+	font-size: 2.5rem;
+	padding: 2px;
+	
+	border-radius: 5px;
+}
+
